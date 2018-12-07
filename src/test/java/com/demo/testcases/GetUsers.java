@@ -1,6 +1,5 @@
 package com.demo.testcases;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class GetUsers {
