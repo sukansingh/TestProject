@@ -14,19 +14,29 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-	 <build>
-        <plugins>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.6.0</version>
-                <configuration>
-                    <mainClass>com.demo.main.TestNGRunner</mainClass>
-                    
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+	 <build>  
+	 <plugins>  
+	  <plugin>  
+	   <groupId>org.codehaus.mojo</groupId>  
+	   <artifactId>exec-maven-plugin</artifactId>  
+	   <version>1.6.0</version>  
+	   <executions>  
+		<execution>  
+		 <phase>test</phase>  
+		 <goals>  
+		  <goal>java</goal>  
+		 </goals>  
+		 <configuration>  
+		  <mainClass>com.demo.main.TestNGRunner</mainClass>  
+		  <arguments>  
+		   <argument>arg0</argument>
+		  </arguments>  
+		 </configuration>  
+		</execution>  
+	   </executions>  
+	  </plugin>  
+	 </plugins>  
+	</build> 
 
   <dependencies>
     <dependency>
