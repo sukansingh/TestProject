@@ -59,6 +59,8 @@
 		  </executions>
 		  <configuration>
 		    <mainClass>com.demo.main.TestNGRunner</mainClass>
+		    <classpathScope>test</classpathScope>
+		    
 		    <arguments>
 		      <argument>arg0</argument>
 		    </arguments>
