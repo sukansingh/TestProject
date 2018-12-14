@@ -4,6 +4,7 @@
   <test name="Test">
     <classes>
       <class name="com.demo.testcases.AutomationTest" />
+      <class name="com.demo.testcases.GetUsers" />
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
