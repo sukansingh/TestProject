@@ -17,7 +17,12 @@ public class TestNGRunner {
 		//myTestNG.setXmlSuites(suites);
 		
 		List<String> suites = new ArrayList<String>();
-		suites.add("testng.xml");
+		if(args.length > 0){
+			suites.add("testng2.xml");
+		}
+		else{
+			suites.add("testng.xml");
+		}
 		myTestNG.setTestSuites(suites);
 		myTestNG.run();
 
