@@ -27,6 +27,6 @@ public class AutomationTest {
 		System.out.println("############################ START ############################");
 		System.out.println("getAllUsers3 test case");
 		System.out.println(" ############################ END ############################");
-    Assert.assertEquals("True", "False")
+    		Assert.assertEquals("True", "False");
 	}
 }
